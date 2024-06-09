@@ -4,5 +4,11 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-
 rand = "0.3.14"
+tokio = { version = "1", features = ["full"] }
+serde = { version = "1.0", features = ["derive"] }
+
+[dependencies.mongodb]
+version = "2.8.2"
+default-features = false
+features = ["async-std-runtime"]
